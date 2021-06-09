@@ -1,0 +1,107 @@
+/* MEDIA QUERIES - DESKTOP */
+@media (min-width:992px) {
+    .torneos {
+        height: auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        border-top: 1px solid $color-principal;
+        border-bottom: 1px solid $color-principal;
+        padding-top:20px;
+        padding-bottom:20px;
+    
+        .torneo__titulo {
+            text-transform: uppercase;
+            color: $color-secundario;
+            font-weight: bold;
+            margin-top:20px;
+            
+        }
+        .torneo__titulo--gris {
+            text-transform: uppercase;
+            color: $color-principal;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .torneo__titulo--contenido {
+            color: $color-principal;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+/* MEDIA QUERIES - TABLETS */
+@media (min-width:576px) and (max-width:992px) {
+    .torneos {
+        height: auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        border-top: 1px solid $color-principal;
+        border-bottom: 1px solid $color-principal;
+        padding-top:20px;
+        padding-bottom:20px;
+    
+        .torneo__titulo {
+            text-transform: uppercase;
+            color: $color-secundario;
+            font-weight: bold;
+            margin-top:20px;
+            
+        }
+        .torneo__titulo--gris {
+            text-transform: uppercase;
+            color: $color-principal;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .torneo__titulo--contenido {
+            color: $color-principal;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+/* MEDIA QUERIES - MOBILE */
+@media (max-width:576px) {
+    .torneos {
+        height: auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        border-top: 1px solid $color-principal;
+        border-bottom: 1px solid $color-principal;
+        padding-top:20px;
+        padding-bottom:20px;
+    
+        .torneo__titulo {
+            text-transform: uppercase;
+            color: $color-secundario;
+            font-weight: bold;
+            margin-top:20px;
+            font-size:16px;
+        }
+        .torneo__titulo--gris {
+            text-transform: uppercase;
+            color: $color-principal;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size:14px;
+            
+        }
+        .torneo__titulo--contenido {
+            color: $color-principal;
+            letter-spacing: 0.5px;
+            font-size:14px;
+        }
+    }
+}

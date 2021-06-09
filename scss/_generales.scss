@@ -1,0 +1,47 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    /*background-color: ligthen($color-principal,);*/
+    background-color: $color-principal;
+}
+
+.parrafo {
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.flexGolf {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 5px;
+}
+
+.flexPolo {
+    @extend .flexGolf;
+    margin-bottom: 10px;
+}
+
+.flexContacto {
+    @extend .flexGolf;
+}
+
+.tituloDorado {
+    color: $color-secundario;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.titulo--principal {
+    color:$color-titulo;
+    font-weight: bold;
+}
+
+li a:hover {
+    color:$color-secundario !important;
+    font-weight: bold;
+}

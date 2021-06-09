@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,AAAC,CACR,gBAAgB,CAAE,iDAAiD,CACnE,MAAM,CAAC,IAAI,CACX,KAAK,CAAE,KAAK,CACZ,mBAAmB,CAAE,MAAM,CAC3B,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,QAAQ,CAAE,QAAQ,CACrB",
+    "sources": [
+        "../scss/fondos.scss"
+    ],
+    "names": [],
+    "file": "fondos.css"
+}

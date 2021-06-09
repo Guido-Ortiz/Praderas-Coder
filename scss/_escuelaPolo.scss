@@ -1,0 +1,260 @@
+/* MEDIA QUERIE - DESKTOP*/
+@media (min-width:992px) {
+    .poloGrid {
+        height: 70vh;
+        width: 80vw;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas: "img tit"
+        "img t1"
+        "img c1"
+        "img t2"
+        "img c2"
+        "img t3"
+        "img c3";
+    }
+    
+    .escuela__img {
+        grid-area: img;
+        background-image: url("../resources/Polo/escuela.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .escuela__titulo {
+        grid-area: tit;
+        font-size: 20px;
+        padding-left: 30px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    $gridPolo:(
+        grupos:t1,
+        descuentos:t2,
+        particulares:t3,
+    );
+    
+    @each $tipo, $area in $gridPolo {
+        .escuela__titulo--#{$tipo}
+        {
+            grid-area: $area;
+            font-size:16px;
+            letter-spacing:0.5px;
+            align-self:flex-start;
+            justify-self:start;
+            padding-left: 30px;
+            text-transform: uppercase;
+            color: $color-secundario;
+            font-weight: bold;
+        }
+    }
+    
+    $gridContenido: (
+        grupos:c1,
+        descuentos:c2,
+        particulares:c3,
+    );
+    
+    @each $tipo, $area in $gridContenido {
+        .escuela__contenido--#{$tipo}
+        {
+            grid-area: $area;
+            font-size:16px;
+            letter-spacing:0.5px;
+            align-self:flex-start;
+            justify-self:start;
+            padding-left: 30px;
+            padding-top:3px;
+        }
+        ul {
+            list-style: none; /* Quitamos los marcadores */
+            padding: 0; /* Quitamos el padding por defecto de la lista */
+            margin-left: 10px; /* Separamos la lista de la izquierda */
+            }
+            
+            span::before { 
+            content: "\2022"; 
+            padding-right: 8px; 
+            color: $color-secundario; 
+            }
+    }
+}
+
+/* MEDIA QUERIE - TABLETS*/
+@media (min-width:576px) and (max-width:992px) {
+    .poloGrid {
+        height: 70vh;
+        width: 90vw;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas: "img tit"
+        "img t1"
+        "img c1"
+        "img t2"
+        "img c2"
+        "img t3"
+        "img c3";
+    }
+    
+    .escuela__img {
+        grid-area: img;
+        background-image: url("../resources/Polo/escuela.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .escuela__titulo {
+        grid-area: tit;
+        font-size: 20px;
+        padding-left: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    $gridPolo:(
+        grupos:t1,
+        descuentos:t2,
+        particulares:t3,
+    );
+    
+    @each $tipo, $area in $gridPolo {
+        .escuela__titulo--#{$tipo}
+        {
+            grid-area: $area;
+            font-size:16px;
+            letter-spacing:0.5px;
+            align-self:flex-start;
+            justify-self:start;
+            padding-left: 30px;
+            text-transform: uppercase;
+            color: $color-secundario;
+            font-weight: bold;
+        }
+    }
+    
+    $gridContenido: (
+        grupos:c1,
+        descuentos:c2,
+        particulares:c3,
+    );
+    
+    @each $tipo, $area in $gridContenido {
+        .escuela__contenido--#{$tipo}
+        {
+            grid-area: $area;
+            font-size:16px;
+            letter-spacing:0.5px;
+            align-self:flex-start;
+            justify-self:start;
+            padding-left: 30px;
+            padding-top:3px;
+        }
+        ul {
+            list-style: none; /* Quitamos los marcadores */
+            padding: 0; /* Quitamos el padding por defecto de la lista */
+            margin-left: 10px; /* Separamos la lista de la izquierda */
+            }
+            
+            span::before { 
+            content: "\2022"; 
+            padding-right: 8px; 
+            color: $color-secundario; 
+            }
+    }
+}
+
+/* MEDIA QUERIE - MOBILE*/
+@media (max-width:576px) {
+    .poloGrid {
+        height: 90vh;
+        width: 90vw;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "tit"
+        "t1"
+        "c1"
+        "t2"
+        "c2"
+        "t3"
+        "c3";
+    }
+    
+    .escuela__img {
+        grid-area: img;
+        background-image: url("../resources/Polo/escuela.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .escuela__titulo {
+        grid-area: tit;
+        font-size: 20px;
+        padding-left: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    $gridPolo:(
+        grupos:t1,
+        descuentos:t2,
+        particulares:t3,
+    );
+    
+    @each $tipo, $area in $gridPolo {
+        .escuela__titulo--#{$tipo}
+        {
+            grid-area: $area;
+            font-size:16px;
+            letter-spacing:0.5px;
+            align-self:flex-start;
+            justify-self:start;
+            padding-left: 20px;
+            text-transform: uppercase;
+            color: $color-secundario;
+            font-weight: bold;
+        }
+    }
+    
+    $gridContenido: (
+        grupos:c1,
+        descuentos:c2,
+        particulares:c3,
+    );
+    
+    @each $tipo, $area in $gridContenido {
+        .escuela__contenido--#{$tipo}
+        {
+            grid-area: $area;
+            font-size:16px;
+            letter-spacing:0.5px;
+            align-self:flex-start;
+            justify-self:start;
+            padding-left: 20px;
+            padding-top:3px;
+        }
+        ul {
+            list-style: none; /* Quitamos los marcadores */
+            padding: 0; /* Quitamos el padding por defecto de la lista */
+            margin-left: 10px; /* Separamos la lista de la izquierda */
+            }
+            
+            span::before { 
+            content: "\2022"; 
+            padding-right: 8px; 
+            color: $color-secundario; 
+            }
+    }
+}

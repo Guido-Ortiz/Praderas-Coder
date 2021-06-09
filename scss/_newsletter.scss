@@ -1,0 +1,32 @@
+.newsletter {
+    width: 30vw;
+    height: 38px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #d4d4d4;
+    letter-spacing: 1px;
+    text-align: left;
+    color: $color-principal;
+    display: block;
+    margin: 0;
+    padding: 0 0 0 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.btnNewsletter {
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid $color-secundario;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+    width: 15vw;
+    margin-left: 10px;
+    min-width: 140px;
+    justify-self: end;
+}
+  

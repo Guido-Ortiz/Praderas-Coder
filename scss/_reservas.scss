@@ -1,0 +1,159 @@
+/* MEDIA QUERIE - DESKTOP */
+@media (min-width:992px) {
+    .fondoReservas {
+        height:35vh;
+        width: 100%;
+        background-color:#000;
+        color:white;
+        position:relative;
+        background-image: url("../resources/Golf/reservas.jpg");
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .flexReservas {
+        height:120px;
+        width: 600px;
+        max-width: 600px;
+        background:#ffffff;
+        color: $color-principal;
+        border:1px solid $color-principal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .textoReservas {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    
+    .btnReservas {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 1px solid $color-secundario;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        width: 15vw;
+        margin-left: 10px;
+        min-width: 140px;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+/* MEDIA QUERIE - TABLETS */
+@media (min-width:576px) and (max-width:992px) {
+    .fondoReservas {
+        height:35vh;
+        width: 100%;
+        background-color:#000;
+        color:white;
+        position:relative;
+        background-image: url("../resources/Golf/reservas.jpg");
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .flexReservas {
+        height:120px;
+        width: 500px;
+        max-width: 600px;
+        background:#ffffff;
+        color: $color-principal;
+        border:1px solid $color-principal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .textoReservas {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    
+    .btnReservas {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 1px solid $color-secundario;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        width: 15vw;
+        margin-left: 10px;
+        min-width: 140px;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+/* MEDIA QUERIE - MOBILE */
+@media (max-width:576px) {
+    .fondoReservas {
+        height:35vh;
+        width: 100%;
+        background-color:#000;
+        color:white;
+        position:relative;
+        background-image: url("../resources/Golf/reservas.jpg");
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .flexReservas {
+        height:120px;
+        width: 350px;
+        max-width: 350px;
+        background:#ffffff;
+        color: $color-principal;
+        border:1px solid $color-principal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding:10px;
+    }
+    
+    .textoReservas {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    
+    .btnReservas {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 1px solid $color-secundario;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        width: 15vw;
+        margin-left: 10px;
+        min-width: 140px;
+        justify-self: end;
+        align-self: center;
+    }
+}

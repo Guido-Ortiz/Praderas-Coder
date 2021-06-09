@@ -1,0 +1,160 @@
+$gridContacto:(
+        direccion:dir,
+        telefono:tel,
+        mail:ma,
+        formulario:form
+    );
+
+// escritorio
+@media (min-width: 992px) {
+    .gridContactos {
+        display: grid;
+        justify-content: center;
+        height: 100vh;
+        width: 80vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20vh 20vh 20vh 35vh;
+        grid-template-areas: "form dir" "form tel" "form ma""form map";
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    $gridContacto:(
+        direccion:dir,
+        telefono:tel,
+        mail:ma,
+        formulario:form
+    );
+    
+    @each $dato,$posicion in $gridContacto {
+        .contacto--#{$dato}
+        {
+            grid-area:$posicion;
+            text-transform: uppercase;
+            font-weight: bold;
+            color:$color-principal;
+            padding-left:20px;
+        }
+        
+    }
+  }
+
+
+
+.formatoContacto {
+    width: 100%;
+    height: 38px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #d4d4d4;
+    letter-spacing: 1px;
+    text-align: left;
+    color: $color-principal;
+    display: block;
+    margin: 0;
+    padding: 0 0 0 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.formatoTextArea {
+    width: 100%;
+    height: 160px;
+    padding: 12px;
+    letter-spacing: 1px;
+    border: 1px solid #d4d4d4;
+    text-align: left;
+    color: $color-principal;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btnContacto {
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid $color-secundario;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+    min-width: 140px;
+    justify-self: end;
+}
+
+.mapa {
+    grid-area: map;
+    padding-left: 20px;
+}
+
+
+/*TELEFONOS*/
+@media (max-width: 600px) {
+    .gridContactos {
+        display: grid;
+        /*justify-content: center;*/
+        height: auto;
+        width: 80vw;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 20vh 20vh 20vh;
+        grid-template-areas: "form""dir""tel""ma";
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .mapa {
+        display:none;
+    }
+    
+    @each $dato,$posicion in $gridContacto {
+        .contacto--#{$dato}
+        {
+            grid-area:$posicion;
+            text-transform: uppercase;
+            font-weight: bold;
+            color:$color-principal;
+            padding-top:20px;
+        }
+  }
+}
+
+
+// tablets
+@media (min-width: 600px) and (max-width: 992px) {
+    .gridContactos {
+        display: grid;
+        /*justify-content: center;*/
+        height: 100vh;
+        width: 80vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30vh 30vh 30vh;
+        grid-template-areas: "form dir" "form tel" "form ma";
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .mapa {
+        display:none;
+    }
+    
+    /*$gridContacto:(
+        direccion:dir,
+        telefono:tel,
+        mail:ma,
+        formulario:form
+    );*/
+    
+    @each $dato,$posicion in $gridContacto {
+        .contacto--#{$dato}
+        {
+            grid-area:$posicion;
+            text-transform: uppercase;
+            font-weight: bold;
+            color:$color-principal;
+            padding-left:20px;
+        }
+        
+    }
+}

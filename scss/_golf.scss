@@ -1,0 +1,222 @@
+/* MEDIA QUERIES - DESKTOP */
+@media (min-width:992px) {
+    .grid__golf {
+        width: 80vw;
+        height:46vh;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 6vh 20vh 20vh;
+        grid-template-areas: "titulo imagen"
+        "parrafo imagen"
+        "torneos imagen";
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .golf__img {
+        background-image: url("../resources/Golf/GolfGrid1.jpeg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .golf__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        /*padding-left: 30px;*/
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__golf {
+        grid-area: parrafo;
+        padding-right: 30px;
+        /*padding-bottom: 10px;*/
+    }
+    
+    .parrafo__golf--torneos {
+        grid-area: torneos;
+        padding-right: 30px;
+        /*padding-bottom: 10px;*/
+    }
+    
+    .membresia__golf {
+        display:grid;
+        width: 80vw;
+        height:35vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5vh 30vh;
+        grid-template-areas: "titulo titulo"
+        "lista1 lista2";
+        margin-top: 20px;
+    
+        .membresia__titulo {
+            grid-area: titulo;
+            font-size: 16px;
+            text-transform: uppercase;
+            color:$color-secundario;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    
+        .membresia__lista1 {
+            grid-area: lista1;
+            margin-top: 10px;
+        }
+    
+        .membresia__lista2 {
+            grid-area: lista2;
+            margin-top: 10px;
+        }       
+    }
+}
+
+/* MEDIA QUERIES - TABLETS */
+@media (min-width:576px) and (max-width:992px) {
+    .grid__golf {
+        width: 80vw;
+        height:64vh;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 6vh 29vh 29vh;
+        grid-template-areas: "titulo imagen"
+        "parrafo imagen"
+        "torneos imagen";
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .golf__img {
+        background-image: url("../resources/Golf/GolfGrid1.jpeg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .golf__titulo {
+        grid-area: titulo;
+        font-size: 19px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__golf {
+        grid-area: parrafo;
+        padding-right: 30px;
+        /*padding-bottom: 10px;*/
+    }
+    
+    .parrafo__golf--torneos {
+        grid-area: torneos;
+        padding-right: 30px;
+        /*padding-bottom: 10px;*/
+    }
+    
+    .membresia__golf {
+        display:grid;
+        width: 80vw;
+        height:35vh;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 5vh 30vh;
+        grid-template-areas: "titulo titulo"
+        "lista1 lista2";
+        margin-top: 20px;
+    
+        .membresia__titulo {
+            grid-area: titulo;
+            font-size: 16px;
+            text-transform: uppercase;
+            color:$color-secundario;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    
+        .membresia__lista1 {
+            grid-area: lista1;
+            margin-top: 20px;
+        }
+    
+        .membresia__lista2 {
+            grid-area: lista2;
+            margin-top: 20px;
+        }
+    
+        
+        
+    }
+}
+
+/* MEDIA QUERIES - MOBILE */
+@media (max-width:576px) {
+    .grid__golf {
+        width: 80vw;
+        height:109vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 38vh 38vh 23vh;
+        grid-template-areas: "titulo"
+        "parrafo" 
+        "torneos"
+        "imagen";
+        margin-bottom: 30px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .golf__img {
+        background-image: url("../resources/Golf/GolfGrid1.jpeg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .golf__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__golf {
+        grid-area: parrafo;
+    }
+    
+    .parrafo__golf--torneos {
+        grid-area: torneos;
+    }
+    
+    .membresia__golf {
+        display:grid;
+        width: 80vw;
+        height:62vh;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 10vh 52vh;
+        grid-template-areas: "titulo titulo"
+        "lista1 lista2";
+        margin-top: 10px;
+        margin-bottom: 20px;
+    
+        .membresia__titulo {
+            grid-area: titulo;
+            font-size: 16px;
+            text-transform: uppercase;
+            color:$color-secundario;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    
+        .membresia__lista1 {
+            grid-area: lista1;
+            margin-top: 10px;
+            justify-self: flex-start;
+        }
+    
+        .membresia__lista2 {
+            grid-area: lista2;
+            margin-top: 10px;
+        }       
+    }
+}

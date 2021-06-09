@@ -1,0 +1,168 @@
+/* MEDIA QUERIE -- DESKTOP */
+@media (min-width:992px) {
+    .bienvenidoGrid {
+        /*background-color: lawngreen;*/
+        width: 80vw;
+        height:40vh;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 6vh 34vh;
+        grid-template-areas: "imagen titulo"
+        "imagen parrafo";
+        margin-bottom: 50px;
+        margin-top: 35px;
+        margin-left: 115px;
+        margin-right: 115px;
+    }
+    
+    .bienvenido__img {
+        background-image: url("../resources/Index/bienvenido.jpg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bienvenido__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        padding-left: 30px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__bienvenido {
+        grid-area: parrafo;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-size:18px;
+    }
+
+    .bienvenido {
+        border-bottom: 2px solid $color-secundario;
+        color: $color-principal;
+        margin-top: 10px;
+        margin-left: 115px;
+        margin-right: 115px;
+        align-self: flex-start;
+        background-color: #e0e0e0;
+        font-weight: bold;
+        padding: 10px;
+        text-transform: uppercase;
+        animation-name: animacionTitulo;
+        animation-duration: 3s;
+    }
+}
+
+/* MEDIA QUERIE -- TABLETS */
+@media (min-width:576px) and (max-width:992px) {
+    .bienvenidoGrid {
+        width: 100vw;
+        height:51vh;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 6vh 45vh;
+        grid-template-areas: "imagen titulo"
+        "imagen parrafo";
+        margin-bottom: 50px;
+        margin-top: 35px;
+        margin-left: 25px;
+        padding-right: 60px;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    
+    .bienvenido__img {
+        background-image: url("../resources/Index/bienvenido.jpg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bienvenido__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        padding-left: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    
+    .parrafo__bienvenido {
+        grid-area: parrafo;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .bienvenido {
+        border-bottom: 2px solid $color-secundario;
+        color: $color-principal;
+        margin-top: 10px;
+        margin-left: 25px;
+        align-self: flex-start;
+        background-color: #e0e0e0;
+        font-weight: bold;
+        padding: 10px;
+        text-transform: uppercase;
+        animation-name: animacionTitulo;
+        animation-duration: 3s;
+    }
+}
+
+/* MEDIA QUERIE -- MOBILE */
+@media (max-width:576px) {
+    .bienvenidoGrid {
+        width: 100vw;
+        height:110vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 60vh 40vh;
+        grid-template-areas: "titulo"
+        "parrafo"
+        "imagen";
+        margin-bottom: 35px;
+        margin-top: 5px;
+        margin-left:10px;
+        justify-content: center;
+        align-content: center;
+        padding-right: 20px;
+    }
+    
+    .bienvenido__img {
+        background-image: url("../resources/Index/bienvenido.jpg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bienvenido__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        padding-left: 10px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__bienvenido {
+        grid-area: parrafo;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    .bienvenido {
+        border-bottom: 2px solid $color-secundario;
+        color: $color-principal;
+        margin-top: 10px;
+        margin-left:10px;
+        align-self: flex-start;
+        background-color: #e0e0e0;
+        font-weight: bold;
+        padding: 10px;
+        text-transform: uppercase;
+        animation-name: animacionTitulo;
+        animation-duration: 3s;
+    }
+}

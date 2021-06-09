@@ -1,0 +1,39 @@
+/* MEDIA QUERIES - DESKTOP */
+@media (min-width:992px) {
+    .sponsors__golf {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* MEDIA QUERIES - TABLETS */
+@media (min-width:576px) and (max-width:992) {
+    .sponsors__golf {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* MEDIA QUERIES - MOBILE */
+@media (max-width:576px) {
+    .sponsors__golf {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80vw;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px;
+    }
+}

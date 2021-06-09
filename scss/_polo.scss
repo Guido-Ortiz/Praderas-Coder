@@ -1,0 +1,112 @@
+/* MEDIA QUERIE - DESKTOP */
+@media (min-width:992px) {
+    .polo {
+        width: 80vw;
+        height:40vh;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 6vh 34vh;
+        grid-template-areas: "titulo imagen"
+        "parrafo imagen";
+        margin-bottom: 50px;
+        margin-top: 35px;
+        margin-left: 115px;
+        margin-right: 115px;
+    }
+    
+    .polo__img {
+        background-image: url("../resources/Polo/polo4.jpg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .polo__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__polo {
+        grid-area: parrafo;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+/* MEDIA QUERIE - TABLETS */
+@media (min-width:576px)and(max-width:992px) {
+    .polo {
+        width: 90vw;
+        height:50vh;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 6vh 44vh;
+        grid-template-areas: "titulo imagen"
+        "parrafo imagen";
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+    
+    .polo__img {
+        background-image: url("../resources/Polo/polo4.jpg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .polo__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__polo {
+        grid-area: parrafo;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+}  
+
+/* MEDIA QUERIE - MOBILE */
+@media (max-width:576px) {
+    .polo {
+        width: 90vw;
+        height:126vh;
+        display: grid;
+        grid-template-columns: 100;
+        grid-template-rows: 6vh 60vh 60vh;
+        grid-template-areas: "titulo"
+        "parrafo"
+        "imagen";
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+    
+    .polo__img {
+        background-image: url("../resources/Polo/polo4.jpg");
+        grid-area: imagen;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .polo__titulo {
+        grid-area: titulo;
+        font-size: 20px;
+        padding-left: 20px;
+        text-transform: uppercase;
+        color:$color-secundario;
+        font-weight: bold;
+    }
+    
+    .parrafo__polo {
+        grid-area: parrafo;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+}  

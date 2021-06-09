@@ -1,0 +1,68 @@
+.fondoIndex {
+    /*height:20rem;*/
+    height:70vh;
+    width: 100vw;
+    background-color:#000;
+    color:white;
+    position:relative;
+    background-image: url("../resources/Index/Carousel/fondoIndex.jpg");
+    background-size: cover;
+}
+
+.fondoNewsletter {
+    /*height:20rem;*/
+    height:35vh;
+    width: 100vw;
+    background-color:#000;
+    color:white;
+    position:relative;
+    background-image: url("../resources/Index/newsletter.jpg");
+    background-size: cover;
+}
+
+
+
+
+.golfFondo {
+    background-image: url("../resources/Golf/Golf1.jpg");
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.poloFondo {
+    background-image: url("../resources/Polo/poloFondo.jpg");
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.instFondo {
+    background-image: url("../resources/Lifestyle/instFondo.jpg");
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contactoFondo {
+    background-image: url("../resources/Contacto/fondoContacto2.jpg");
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
