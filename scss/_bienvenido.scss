@@ -115,10 +115,10 @@
 @media (max-width:576px) {
     .bienvenidoGrid {
         width: 100vw;
-        height:110vh;
+        height:105vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 60vh 40vh;
+        grid-template-rows: 5vh 60vh 40vh;
         grid-template-areas: "titulo"
         "parrafo"
         "imagen";
@@ -139,8 +139,9 @@
     
     .bienvenido__titulo {
         grid-area: titulo;
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 10px;
+        margin-top: 10px;
         text-transform: uppercase;
         color:$color-secundario;
         font-weight: bold;
