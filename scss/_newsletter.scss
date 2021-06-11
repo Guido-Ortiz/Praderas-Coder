@@ -1,32 +1,110 @@
-.newsletter {
-    width: 30vw;
-    height: 38px;
-    font-family: 'Nunito', sans-serif;
-    border: 1px solid #d4d4d4;
-    letter-spacing: 1px;
-    text-align: left;
-    color: $color-principal;
-    display: block;
-    margin: 0;
-    padding: 0 0 0 12px;
-    position: relative;
-    text-transform: uppercase;
+/* MEDIA QUERIES - DESKTOP */
+@media (min-width:992px) {
+    .newsletter {
+        width: 30vw;
+        height: 38px;
+        font-family: 'Nunito', sans-serif;
+        border: 1px solid #d4d4d4;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $color-principal;
+        display: block;
+        margin: 0;
+        padding: 0 0 0 12px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .btnNewsletter {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: white;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: 1px solid $color-secundario;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        width: 12vw;
+        margin-left: 10px;
+        padding: 0 0 0 12px;
+        min-width: 140px;
+        justify-self: end;
+    }
 }
 
-.btnNewsletter {
-    background-color: $color-secundario;
-    border-color: $color-secundario;
-    color: white;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border: 1px solid $color-secundario;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    height: 40px;
-    width: 15vw;
-    margin-left: 10px;
-    min-width: 140px;
-    justify-self: end;
+/* MEDIA QUERIES - TABLETS */
+@media (min-width:576px) and (max-width:992px) {
+    .newsletter {
+        width: 30vw;
+        height: 38px;
+        font-family: 'Nunito', sans-serif;
+        border: 1px solid #d4d4d4;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $color-principal;
+        display: block;
+        margin: 0;
+        padding: 0 0 0 12px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .btnNewsletter {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: white;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: 1px solid $color-secundario;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        width: 12vw;
+        margin-left: 10px;
+        padding: 0 0 0 12px;
+        min-width: 140px;
+        justify-self: end;
+    }
+}
+
+/* MEDIA QUERIES - MOBILE */
+@media (max-width:576px) {
+    .newsletter {
+        width: 40vw;
+        height: 38px;
+        font-family: 'Nunito', sans-serif;
+        border: 1px solid #d4d4d4;
+        letter-spacing: 1px;
+        text-align: left;
+        font-size: 12px;
+        color: $color-principal;
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .btnNewsletter {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: white;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: 1px solid $color-secundario;
+        text-align: center;
+        font-size: 12px;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        width: 8vw;
+        margin-left: 10px;
+        padding: 0;
+        min-width: 110px;
+        justify-self: end;
+    }
 }
   
