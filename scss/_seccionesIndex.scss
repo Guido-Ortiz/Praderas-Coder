@@ -13,7 +13,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /*background: rgba(254, 209, 54, 0.9);*/
     
     align-items: center;
     justify-content: center;
@@ -34,13 +33,12 @@
 }
 #seccion .seccion-item .seccion-caption .seccion-caption-heading {
     font-size: 1.5rem;
-    /*font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+    
     font-weight: 700;
     margin-bottom: 0;
 }
 #seccion .seccion-item .seccion-caption .seccion-caption-subheading {
     font-style: italic;
-    /*font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
 }
 
 #seccion .seccion-item .seccion-link:hover img {

@@ -94,7 +94,6 @@ $gridContacto:(
 @media (max-width: 600px) {
     .gridContactos {
         display: grid;
-        /*justify-content: center;*/
         height: auto;
         width: 80vw;
         grid-template-columns: 100%;
@@ -125,7 +124,6 @@ $gridContacto:(
 @media (min-width: 600px) and (max-width: 992px) {
     .gridContactos {
         display: grid;
-        /*justify-content: center;*/
         height: 100vh;
         width: 80vw;
         grid-template-columns: 50% 50%;
@@ -138,14 +136,7 @@ $gridContacto:(
     .mapa {
         display:none;
     }
-    
-    /*$gridContacto:(
-        direccion:dir,
-        telefono:tel,
-        mail:ma,
-        formulario:form
-    );*/
-    
+        
     @each $dato,$posicion in $gridContacto {
         .contacto--#{$dato}
         {
